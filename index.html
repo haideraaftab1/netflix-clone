@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix | Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/736x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg');
+            background-size: cover;
+            background-position: center;
+            position:relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+        #navbar .logo img {
+            width: 220px;
+            padding-left: 200px;
+            height: auto;
+        }
+
+        .button {
+            display: flex;
+            padding-right: 200px;
+            gap: 10px;
+        }
+
+        .button div {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button div:hover {
+            background-color: darkred;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <img src="https://imgs.search.brave.com/adudiPXgQOX7Oz61HnJ-4ZsCDvulmuoEjxfo37uM58Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMTMvTmV0/ZmxpeC1Mb2dvLVBO/Ry1JbWFnZXMucG5n"
+                alt="Netflix Logo">
+        </div>
+        <div class="button">
+            <div id="sign-in">Sin In</div>
+            <div id="register">Register</div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Unlimited Movies, TV Shows, and More</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+    </div>
+</body>
+
+</html>
